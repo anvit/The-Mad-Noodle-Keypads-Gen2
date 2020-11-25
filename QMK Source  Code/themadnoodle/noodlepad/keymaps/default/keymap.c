@@ -17,27 +17,6 @@ enum my_keycodes {
   EMJ_EYERL,
 };
 
-// enum unicode_names {
-//   ENDSH,
-//   EMJ_SWT,
-//   EMJ_TNG,
-//   EMJ_LAUGH,
-//   EMJ_HEART,
-//   EMJ_SML,
-//   EMJ_EYERL,
-//   EMDASH
-// };
-
-// const uint32_t PROGMEM unicode_map[] = {
-//     [EMJ_SWT]  = 0x1F605,  // 😅
-//     [EMJ_TNG] = 0x1F61D,  // 😝
-//     [EMJ_LAUGH]  = 0x1F602, // 😂
-//     [EMJ_HEART]  = 0x2764,  // ❤️
-//     [EMJ_SML] = 0x263A,  // ☺️
-//     [EMJ_EYERL]  = 0x1F644, // 🙄
-//     [EMDASH] = 0x2014
-// };    
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* LAYER 0
@@ -66,13 +45,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `------------------------'
      */
 
-    // Emoji Keys
-    // [1] = LAYOUT_ortho_3x3(
-    //   KC_TRNS, KC_TRNS, KC_TRNS, 
-    //   X(EMJ_LAUGH), X(EMJ_SML), X(EMJ_EYERL),
-    //   X(EMJ_TNG), X(EMJ_SWT), KC_TRNS
-    //   ),
-    
     [1] = LAYOUT_ortho_3x3(
       KC_TRNS, KC_TRNS, KC_TRNS, 
       EMJ_LAUGH, EMJ_SML, EMJ_EYERL,
