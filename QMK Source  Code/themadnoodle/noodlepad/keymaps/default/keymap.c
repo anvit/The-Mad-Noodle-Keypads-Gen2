@@ -156,17 +156,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case NOTN:
       if (!record->event.pressed) {
-        SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(100) "Notion" SS_TAP(X_ENTER));
+        SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(50) "Notion" SS_DELAY(50) SS_TAP(X_ENTER));
       }
       break;
     case DSCRD:
       if (!record->event.pressed) {
-        SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(100) "Discord" SS_TAP(X_ENTER));
+        SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(50) "Discord" SS_DELAY(50) SS_TAP(X_ENTER));
       }
       break;
     case VPN:
       if (!record->event.pressed) {
-        SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(100) "NordVPN" SS_TAP(X_ENTER));
+        SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(50) "NordVPN" SS_DELAY(50) SS_TAP(X_ENTER));
       }
       break;
   }
